@@ -6,8 +6,9 @@ import time
 
 @pytest.fixture
 def client(request):
-    c = docker.Client()
+    c = docker.Client(base_url='unix://var/run/docker.sock')
     request.addfinalizer(c.close)
+    print(c.version())
     return c
 
 
