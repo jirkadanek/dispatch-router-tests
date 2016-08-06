@@ -36,6 +36,7 @@ env:
 before_install:
 - apt-cache madison docker-engine
 - sudo apt-get -o Dpkg::Options::="--force-confnew" install -y docker-engine=${DOCKER_VERSION}
+- docker pull jdanekrh/dispatch-router:4-90415a
 
 install:
 - pip install -r requirements.txt
