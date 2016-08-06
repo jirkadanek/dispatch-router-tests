@@ -6,7 +6,7 @@ import time
 
 @pytest.fixture
 def client(request):
-    c = docker.Client(version='1.20')
+    c = docker.Client()
     request.addfinalizer(c.close)
     print(c.version())
     return c
@@ -14,10 +14,10 @@ def client(request):
 
 @pytest.fixture
 def network(request, client: docker.Client):
-    network = "mynetwork123"
-    client.create_network(network)
-    request.addfinalizer(lambda: client.remove_network(network))
-    return network
+    n = "mynetwork123"
+    client.create_network(n)
+    request.addfinalizer(lambda: client.remove_network(n))
+    return n
 
 
 class DispatchRouter(object):
