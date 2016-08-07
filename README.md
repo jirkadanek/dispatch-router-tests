@@ -1,6 +1,10 @@
 # dispatch-router-tests
 Tests for https://github.com/apache/qpid-dispatch AMQP 1.0 message router
 
+[![Build Status](https://travis-ci.org/jdanekrh/dispatch-router-tests.svg?branch=Docker)](https://travis-ci.org/jdanekrh/dispatch-router-tests)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jdanekrh/dispatch-router-tests/badges/quality-score.png?b=Docker)](https://scrutinizer-ci.com/g/jdanekrh/dispatch-router-tests/?branch=Docker)
+[![Code Climate](https://codeclimate.com/github/jdanekrh/dispatch-router-tests/badges/gpa.svg)](https://codeclimate.com/github/jdanekrh/dispatch-router-tests)
+
 ## Description
 
 The Docker version.
