@@ -33,9 +33,13 @@ It is extremely easy to blank the slate. Simply recreate the Docker container.
 
 ## Design options and decisions
 
+### Qpid Proton Python
+
+I do not really understand how AMQP maps onto that API. I probably should use two clients, preferably something close to AMQP, without much abstraction, to really understand.
+
 ### Docker (idiomatic)
 
-Little problem with qdmanage. I have to run the command inside a container. Docker exec for the rescue?
+Little problem with debugging. How do I interactively run test against what I compiled in my modified checkout of the router repository? I don't. Let's revisit when there are actual cases of revealed bugs.
 
 ### OpenStack
 
