@@ -31,6 +31,14 @@ Since images are fetched from hub.docker.com, it is not necessary to provision a
 
 ## Use
 
+Check you do not have any other docker images running. (Especially if they bind to the same ports.) Then do
+
+    py.test tests
+
+Tests run currently for ~5s. If it takes longer, something is broken.
+
+If tests fail, you may have to undo some Docker stuff (delete network `docker network rm dispatch`, kill containers `docker ps -a; docker rm ra`, ...)
+
 ## Managing State
 
 It is extremely easy to blank the slate. Simply recreate the Docker container.

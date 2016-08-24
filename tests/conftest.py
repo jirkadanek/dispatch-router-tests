@@ -9,7 +9,7 @@ import docker.utils
 import pytest
 import time
 
-ROUTER_IMAGE = 'jdanekrh/dispatch-router:4-90415a'
+ROUTER_IMAGE = 'jdanekrh/dispatch-router:6-ae1223'
 NETWORK_NAME = 'dispatch'
 SUBNET = '172.16.43.0/24'
 RA = '172.16.43.2'
